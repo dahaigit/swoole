@@ -1,5 +1,5 @@
 <?php
-$tcpServer = new Swoole\Server('127.0.0.1', 8080);
+$tcpServer = new Swoole\Server('0.0.0.0', 8081);
 
 $tcpServer->on('Connect', function ($tcpServer, $fd){
     echo "监听了\n";
